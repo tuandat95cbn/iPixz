@@ -22,7 +22,7 @@ import java.util.Map;
 @CrossOrigin
 public class ContentController {
     public static Logger LOG = LoggerFactory.getLogger(ContentController.class);
-    public static String uploadPath = "/contentRepository";
+    public static String uploadPath = "contentRepository";
     @Autowired
     private ContentService contentService;
 
@@ -31,9 +31,13 @@ public class ContentController {
         Map<String, Object> suc = ResponseUtils.returnSuccess();
         try {
             byte[] bytes = contentModel.getFile().getBytes();
-            Path path = Paths.get(uploadPath + contentModel.getFile().getOriginalFilename());
+            File directory = new File(uploadPath);
+            if (! directory.exists()){
+                directory.mkdir();
+            }
+            Path path = Paths.get(uploadPath + "/"+contentModel.getFile().getOriginalFilename());
             Files.write(path, bytes);
-            Content content = contentService.createContent(contentModel.getContentType(), uploadPath + contentModel.getFile().getOriginalFilename());
+            Content content = contentService.createContent(contentModel.getContentType(), uploadPath + "/"+ contentModel.getFile().getOriginalFilename());
             suc.put("contentId", content.getContentId());
         } catch (IOException e) {
             e.printStackTrace();
