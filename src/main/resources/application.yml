@@ -1,0 +1,29 @@
+SERVICE_HOST: localhost
+SERVICE_PORT: 8080
+MYSQL_DB_HOST: localhost
+MYSQL_DB_PORT: 3306
+MYSQL_DB_USER: root
+MYSQL_DB_PASS: 123456
+spring:
+  servlet:
+    multipart:
+     max-file-size: 10MB
+     max-request-size: 10MB
+  datasource:
+    testWhileIdle: true
+    validationQuery: 'SELECT 1'
+    url: jdbc:mysql://${MYSQL_DB_HOST}:${MYSQL_DB_PORT}/ipixz?zeroDateTimeBehavior=convertToNull&characterEncoding=UTF-8
+    username: ${MYSQL_DB_USER}
+    password: ${MYSQL_DB_PASS}
+
+logging:
+  path: logs
+  file: ${logging.path}/ipixz.log
+  level:
+    root: INFO
+    com:
+      dailyopt :
+        tripplanning : DEBUG
+    org:
+      springframework: INFO
+  config: classpath:logback-dev.xml
