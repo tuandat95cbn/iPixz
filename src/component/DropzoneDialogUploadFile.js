@@ -4,12 +4,15 @@ import Button from "@material-ui/core/Button";
 import { API_URL } from "../config/config";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
+
+
 export default class DropzoneDialogUploadFile extends Component {
   constructor(props) {
     super(props);
     this.state = {
       open: false,
-      files: []
+      files: [],
+      waiting: false
     };
   }
 
@@ -90,7 +93,7 @@ export default class DropzoneDialogUploadFile extends Component {
         <DropzoneDialog
           open={this.state.open}
           onSave={this.handleSave.bind(this)}
-          acceptedFiles={["image/jpeg,image/png,image/gif"]}
+          acceptedFiles={["image/jpeg,image/png,image/gif,image/tif,image/raw,file/rar,file/zip"]}
           showPreviews={true}
           maxFileSize={5000000}
           onClose={this.handleClose.bind(this)}
