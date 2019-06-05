@@ -1,0 +1,97 @@
+2019-05-22 20:13:34.735  INFO 23900 --- [           main]  com.trandat.iPixz.IPixzApplication       : Starting IPixzApplication on DESKTOP-S289S13 with PID 23900 (C:\Users\levan\Documents\GitHub\iPixz-backend\iPixz\target\classes started by levan in C:\Users\levan\Documents\GitHub\iPixz-backend\iPixz)
+2019-05-22 20:13:34.739  INFO 23900 --- [           main]  com.trandat.iPixz.IPixzApplication       : No active profile set, falling back to default profiles: default
+2019-05-22 20:13:35.791  INFO 23900 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-22 20:13:35.904  INFO 23900 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91ms. Found 2 repository interfaces.
+2019-05-22 20:13:36.268  INFO 23900 --- [           main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8cc5c8d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-22 20:13:36.681  INFO 23900 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-05-22 20:13:36.696  INFO 23900 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2019-05-22 20:13:36.705  INFO 23900 --- [           main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-22 20:13:36.710  INFO 23900 --- [           main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-05-22 20:13:36.836  INFO 23900 --- [           main]  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-22 20:13:36.837  INFO 23900 --- [           main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2043 ms
+2019-05-22 20:13:37.004  INFO 23900 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-05-22 20:13:37.097  INFO 23900 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-05-22 20:13:37.139  INFO 23900 --- [           main]  o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-05-22 20:13:37.202  INFO 23900 --- [           main]  org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-05-22 20:13:37.203  INFO 23900 --- [           main]  org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-05-22 20:13:37.338  INFO 23900 --- [           main]  o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-05-22 20:13:37.463  INFO 23900 --- [           main]  org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-05-22 20:13:37.591  WARN 23900 --- [           main]  org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2019-05-22 20:13:37.942  INFO 23900 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-22 20:13:38.265  INFO 23900 --- [           main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-22 20:13:38.292  WARN 23900 --- [           main]  aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-05-22 20:13:38.437  INFO 23900 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+2019-05-22 20:13:38.453  INFO 23900 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-05-22 20:13:38.460  INFO 23900 --- [           main]  com.trandat.iPixz.IPixzApplication       : Started IPixzApplication in 4.357 seconds (JVM running for 7.08)
+2019-05-22 20:14:04.955  INFO 23900 --- [nio-8080-exec-1]  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-22 20:14:04.962  INFO 23900 --- [nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-22 20:14:04.972  INFO 23900 --- [nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-22 20:14:05.239  INFO 23900 --- [nio-8080-exec-3]  c.t.iPixz.controller.ContentController   : get-content::responce :: is file null:  false__path : C:\Users\levan\Documents\GitHub\iPixz-backend\iPixz\contentRepository\4507713_FB_IMG_1542810745532.jpg name : 4507713_FB_IMG_1542810745532.jpg
+2019-05-22 20:51:44.143  INFO 25140 --- [           main]  com.trandat.iPixz.IPixzApplication       : Starting IPixzApplication on DESKTOP-S289S13 with PID 25140 (C:\Users\levan\Documents\GitHub\iPixz-backend\iPixz\target\classes started by levan in C:\Users\levan\Documents\GitHub\iPixz-backend\iPixz)
+2019-05-22 20:51:44.148  INFO 25140 --- [           main]  com.trandat.iPixz.IPixzApplication       : No active profile set, falling back to default profiles: default
+2019-05-22 20:51:45.460  INFO 25140 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-22 20:51:45.531  INFO 25140 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59ms. Found 2 repository interfaces.
+2019-05-22 20:51:45.770  INFO 25140 --- [           main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b6172ddd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-22 20:51:46.028  INFO 25140 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-05-22 20:51:46.039  INFO 25140 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2019-05-22 20:51:46.052  INFO 25140 --- [           main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-22 20:51:46.059  INFO 25140 --- [           main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-05-22 20:51:46.211  INFO 25140 --- [           main]  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-22 20:51:46.211  INFO 25140 --- [           main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1989 ms
+2019-05-22 20:51:46.397  INFO 25140 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-05-22 20:51:46.481  INFO 25140 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-05-22 20:51:46.527  INFO 25140 --- [           main]  o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-05-22 20:51:46.644  INFO 25140 --- [           main]  org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-05-22 20:51:46.648  INFO 25140 --- [           main]  org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-05-22 20:51:46.910  INFO 25140 --- [           main]  o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-05-22 20:51:47.565  INFO 25140 --- [           main]  org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-05-22 20:51:47.830  WARN 25140 --- [           main]  org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2019-05-22 20:51:48.291  INFO 25140 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-22 20:51:48.661  INFO 25140 --- [           main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-22 20:51:48.691  WARN 25140 --- [           main]  aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-05-22 20:51:48.866  INFO 25140 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+2019-05-22 20:51:48.892  INFO 25140 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-05-22 20:51:48.904  INFO 25140 --- [           main]  com.trandat.iPixz.IPixzApplication       : Started IPixzApplication in 5.697 seconds (JVM running for 11.939)
+2019-05-22 20:51:56.659  INFO 25140 --- [nio-8080-exec-1]  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-22 20:51:56.665  INFO 25140 --- [nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-22 20:51:56.674  INFO 25140 --- [nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-05-22 20:51:56.948  INFO 25140 --- [nio-8080-exec-2]  c.t.iPixz.controller.ContentController   : get-content::responce :: is file null:  false__path : C:\Users\levan\Documents\GitHub\iPixz-backend\iPixz\contentRepository\14700964_582306801953037_9211640654855506794_o.jpg name : 14700964_582306801953037_9211640654855506794_o.jpg
+2019-05-22 20:58:00.857  INFO 25140 --- [nio-8080-exec-6]  c.t.iPixz.controller.ContentController   : get-content::responce :: is file null:  false__path : C:\Users\levan\Documents\GitHub\iPixz-backend\iPixz\contentRepository\14700964_582306801953037_9211640654855506794_o.jpg name : 14700964_582306801953037_9211640654855506794_o.jpg
+2019-05-22 22:23:09.707  INFO 21852 --- [           main]  com.trandat.iPixz.IPixzApplication       : Starting IPixzApplication on DESKTOP-S289S13 with PID 21852 (C:\Users\levan\Documents\GitHub\iPixz-backend\iPixz\target\classes started by levan in C:\Users\levan\Documents\GitHub\iPixz-backend\iPixz)
+2019-05-22 22:23:09.710  INFO 21852 --- [           main]  com.trandat.iPixz.IPixzApplication       : No active profile set, falling back to default profiles: default
+2019-05-22 22:23:10.275  INFO 21852 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-05-22 22:23:10.336  INFO 21852 --- [           main]  .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53ms. Found 2 repository interfaces.
+2019-05-22 22:23:10.610  INFO 21852 --- [           main]  trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa4d2137] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-22 22:23:10.884  INFO 21852 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-05-22 22:23:10.902  INFO 21852 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8080"]
+2019-05-22 22:23:10.914  INFO 21852 --- [           main]  o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-22 22:23:10.920  INFO 21852 --- [           main]  org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-05-22 22:23:11.016  INFO 21852 --- [           main]  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-22 22:23:11.016  INFO 21852 --- [           main]  o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1260 ms
+2019-05-22 22:23:11.135  INFO 21852 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-05-22 22:23:11.221  INFO 21852 --- [           main]  com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-05-22 22:23:11.264  INFO 21852 --- [           main]  o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-05-22 22:23:11.324  INFO 21852 --- [           main]  org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2019-05-22 22:23:11.326  INFO 21852 --- [           main]  org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-05-22 22:23:11.465  INFO 21852 --- [           main]  o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-05-22 22:23:11.563  INFO 21852 --- [           main]  org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-05-22 22:23:11.700  WARN 21852 --- [           main]  org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2019-05-22 22:23:12.175  INFO 21852 --- [           main]  j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-22 22:23:12.520  INFO 21852 --- [           main]  o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-22 22:23:12.546  WARN 21852 --- [           main]  aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-05-22 22:23:12.672  INFO 21852 --- [           main]  o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8080"]
+2019-05-22 22:23:12.688  INFO 21852 --- [           main]  o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-05-22 22:23:12.706  INFO 21852 --- [           main]  com.trandat.iPixz.IPixzApplication       : Started IPixzApplication in 3.842 seconds (JVM running for 6.754)
+2019-05-22 22:23:26.950  INFO 21852 --- [nio-8080-exec-1]  o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-22 22:23:26.956  INFO 21852 --- [nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-22 22:23:26.969  INFO 21852 --- [nio-8080-exec-1]  o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-05-22 22:23:27.234  INFO 21852 --- [nio-8080-exec-4]  c.t.iPixz.controller.ContentController   : get-content::responce :: is file null:  false__path : C:\Users\levan\Documents\GitHub\iPixz-backend\iPixz\contentRepository\14700964_582306801953037_9211640654855506794_o.jpg name : 14700964_582306801953037_9211640654855506794_o.jpg
+2019-05-22 22:24:49.019  INFO 21852 --- [nio-8080-exec-7]  c.t.iPixz.controller.ContentController   : get-content::responce :: is file null:  false__path : C:\Users\levan\Documents\GitHub\iPixz-backend\iPixz\contentRepository\14700964_582306801953037_9211640654855506794_o.jpg name : 14700964_582306801953037_9211640654855506794_o.jpg
+2019-05-22 22:25:47.823  INFO 21852 --- [io-8080-exec-10]  c.t.iPixz.controller.ContentController   : get-content::responce :: is file null:  false__path : C:\Users\levan\Documents\GitHub\iPixz-backend\iPixz\contentRepository\14700964_582306801953037_9211640654855506794_o.jpg name : 14700964_582306801953037_9211640654855506794_o.jpg
+2019-05-22 22:26:34.077  INFO 21852 --- [nio-8080-exec-5]  c.t.iPixz.controller.ContentController   : get-content::responce :: is file null:  false__path : C:\Users\levan\Documents\GitHub\iPixz-backend\iPixz\contentRepository\14700964_582306801953037_9211640654855506794_o.jpg name : 14700964_582306801953037_9211640654855506794_o.jpg

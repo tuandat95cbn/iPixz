@@ -5,6 +5,7 @@ import com.trandat.iPixz.repo.ContentRepo;
 import com.trandat.iPixz.repo.ContentTypeRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import java.util.List;
 
 @Service
 public class ContentServiceImpl implements ContentService {
@@ -21,4 +22,8 @@ public class ContentServiceImpl implements ContentService {
     public Content findById(String id) {
         return contentRepo.getOne(id);
     }
+
+    @Override
+    public List<Content> getAll() {return  contentRepo.findAll();}
+
 }

@@ -1,7 +1,9 @@
 package com.trandat.iPixz.controller;
 
 import com.trandat.iPixz.entity.Content;
+import com.trandat.iPixz.entity.ContentType;
 import com.trandat.iPixz.model.ContentModel;
+import com.trandat.iPixz.model.ContentPreview;
 import com.trandat.iPixz.service.ContentService;
 import com.trandat.iPixz.utils.ResponseUtils;
 import org.slf4j.Logger;
@@ -16,6 +18,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.sql.Array;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 @RestController
@@ -59,5 +64,19 @@ public class ContentController {
         return new FileSystemResource(file);
     }
 
+
+    @RequestMapping("/content/all")
+    public List<ContentPreview> getAllContent() throws IOException{
+
+        List<Content> contents=new ArrayList<Content>();
+        contents=contentService.getAll();
+        List<ContentPreview> contentsPreview=new ArrayList<ContentPreview>();
+        for(Content content:contents){
+            ContentPreview contentPreview=new ContentPreview(content.getContentId(), content.getContentType().getContentTypeId(),content.getUrl(),content.getCreatedStamp());
+            contentsPreview.add(contentPreview);
+        }
+
+        return contentsPreview;
+    }
 
 }

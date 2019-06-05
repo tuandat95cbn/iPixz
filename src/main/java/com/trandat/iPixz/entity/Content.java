@@ -5,6 +5,7 @@ import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Date;
 
 @Getter
@@ -26,18 +27,19 @@ public class Content {
     @Column(name = "created_by_user_login")
     private String createdBy;
     @Column(name = "last_modified_by_user_login")
-    private String lastModidiedBy;
+    private String lastModifiedBy;
     private Date createdStamp;
     private Date lastUpdatedStamp;
 
-    public Content(ContentType contentType, String mimeType, String characterSet, String url, String description, String createdBy, String lastModidiedBy) {
+    public Content(ContentType contentType, String mimeType, String characterSet, String url, String description, String createdBy, String lastModifiedBy) {
         this.contentType = contentType;
         this.mimeType = mimeType;
         this.characterSet = characterSet;
         this.url = url;
         this.description = description;
         this.createdBy = createdBy;
-        this.lastModidiedBy = lastModidiedBy;
+        this.lastModifiedBy = lastModifiedBy;
+
     }
 
     public Content() {
